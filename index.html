@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="main.js" type="module" defer></script>
+    <title>Pokedex</title>
+</head>
+<body>
+<div class="container">
+    <div class="background-element-left"></div>
+    <div class="background-element-right">
+        <div class="circle big-circle">
+            <div class="light"></div>
+            <div class="circle small-circle">
+                <div class="line">
+                    <div class="pokeball-circle">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-panel">
+        <div class="main-screen-bg"></div>
+        <div class="main-screen-border">
+            <div class="top-screen">
+                <div class="pokemon-container">
+                    <div id="image-container"></div>
+                    <div id="name-container" class="name-container"></div>
+                    <div id="types-container" class="types-container"></div>
+                    <div class="pokemon-info-container">
+                        <div id="weight-container"></div>
+                        <div id="height-container"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="middle-element">
+        <div class="hinge-container">
+            <div class="hinge hinge-left"></div>
+            <div class="hinge hinge-middle"></div>
+            <div class="hinge hinge-right"></div>
+        </div>
+    </div>
+    <div class="bottom-panel">
+        <div class="bottom-screen-bg">
+            <div class="btn-container">
+                <button class="btn-left" id="prev"></button>
+                <button class="btn-up" id="up"></button>
+                <button class="btn-right" id="next"></button>
+                <button class="btn-down" id="down"></button>
+            </div>
+        </div>
+            <div class="bottom-screen-border">
+                <div class="bottom-screen">
+                    <div id="description-container"></div>
+                    <h3>Evolution Chain:</h3>
+                    <div class="evo" id="evolution-chain-container">
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>

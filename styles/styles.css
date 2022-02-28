@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-family: "VT323", monospace;
+}
+
+.image {
+  image-rendering: pixelated;
+}
+
+.main-image {
+  height: 200px;
+}
+
+.evo-image {
+  height: 100px;
+}
+
+.normal {
+  background-color: #a3aa7f;
+}
+
+.fire {
+  background-color: #f07f31;
+}
+
+.fighting {
+  background-color: #c2312b;
+}
+
+.water {
+  background-color: #6791ee;
+}
+
+.flying {
+  background-color: #aa90e8;
+}
+
+.grass {
+  background-color: #79c751;
+}
+
+.poison {
+  background-color: #a13ca1;
+}
+
+.electric {
+  background-color: #f8d12c;
+}
+
+.ground {
+  background-color: #ddc071;
+}
+
+.psychic {
+  background-color: #f5578a;
+}
+
+.rock {
+  background-color: #b6a03c;
+}
+
+.ice {
+  background-color: #91dcd7;
+}
+
+.bug {
+  background-color: #a8b91d;
+}
+
+.dragon {
+  background-color: #a8b91d;
+}
+
+.ghost {
+  background-color: #70579a;
+}
+
+.dark {
+  background-color: #6f5848;
+}
+
+.steel {
+  background-color: #b8b9cb;
+}
+
+.fairy {
+  background-color: #ee99ae;
+}
+
+.unknown {
+  background-color: #67a08f;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn, .container .bottom-panel .bottom-screen-bg .btn-container .btn-down, .container .bottom-panel .bottom-screen-bg .btn-container .btn-up, .container .bottom-panel .bottom-screen-bg .btn-container .btn-right, .container .bottom-panel .bottom-screen-bg .btn-container .btn-left {
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #000;
+  background-color: #97979d;
+}
+
+.screen-container, .container .bottom-panel .bottom-screen-border .bottom-screen, .container .top-panel .main-screen-border .top-screen {
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 8px #fff;
+  background: linear-gradient(40deg, #86a8ea 30%, #d3d9e8 45%, #e2e7e8 55%, #b9c6e7 65%, #86a8ea 100%);
+  padding: 20px;
+}
+
+.panel, .container .bottom-panel, .container .top-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px #000;
+  position: relative;
+  height: 50%;
+  background-color: #dc0a2d;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f8f8;
+}
+
+.container {
+  border: 3px solid #000;
+  border-radius: 10px;
+  position: relative;
+  width: 600px;
+  height: 80%;
+  background-color: #dc0a2d;
+  outline: none;
+  padding: 5px;
+  margin: auto;
+}
+.container .background-element-left {
+  border: 4px solid #000;
+  border-radius: 20%;
+  box-shadow: inset 0 0 8px #000;
+  position: absolute;
+  bottom: 0;
+  left: -40%;
+  background-color: #303032;
+  width: 500px;
+  height: 50%;
+  z-index: -1;
+}
+.container .background-element-right {
+  border: 4px solid #000;
+  border-radius: 20%;
+  box-shadow: inset 0 0 8px #000;
+  position: absolute;
+  top: 75%;
+  right: -40%;
+  transform: translateY(-48%);
+  background-color: #303032;
+  width: 300px;
+  height: 30%;
+  z-index: -1;
+}
+.container .background-element-right .circle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.container .background-element-right .big-circle {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.container .background-element-right .big-circle .light {
+  position: absolute;
+  top: 23%;
+  left: -30%;
+  width: 300px;
+  height: 100px;
+  background-color: #dc0a2d;
+  animation: rotate 6s infinite linear;
+}
+.container .background-element-right .big-circle .small-circle {
+  top: 50%;
+  left: 50%;
+  width: 170px;
+  height: 170px;
+  background-color: #303032;
+  overflow: hidden;
+}
+.container .background-element-right .big-circle .small-circle .line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #fff;
+  width: 174px;
+  height: 6px;
+}
+.container .background-element-right .big-circle .small-circle .line .pokeball-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.container .background-element-right .big-circle .small-circle .line .pokeball-circle .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #303032;
+  /*animation: beep 3s infinite linear;*/
+}
+.container .top-panel .main-screen-bg {
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  width: 87%;
+  height: 60%;
+  background-color: #303032;
+  box-shadow: inset 4px 4px 8px #000, inset -4px -4px 8px #000;
+  z-index: 1;
+}
+.container .top-panel .main-screen-border {
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #000;
+  position: relative;
+  width: 70%;
+  height: 80%;
+  transform: translateY(-2%);
+  background-color: #97979d;
+  padding: 5px;
+  z-index: 20;
+}
+.container .top-panel .main-screen-border .top-screen .pokemon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .top-panel .main-screen-border .top-screen .pokemon-container .name-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.container .top-panel .main-screen-border .top-screen .pokemon-container .types-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0 0;
+  gap: 0.5rem;
+}
+.container .top-panel .main-screen-border .top-screen .pokemon-container .types-container div {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 100px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #000;
+  box-shadow: 0 0 5px #555;
+}
+.container .top-panel .main-screen-border .top-screen .pokemon-container .pokemon-info-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.3rem;
+}
+.container .middle-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 5%;
+  transform: translate(-51%, -50%);
+  z-index: 10;
+}
+.container .middle-element .hinge-container {
+  display: flex;
+  width: 102%;
+  height: 100%;
+}
+.container .middle-element .hinge-container .hinge {
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #000;
+  background: linear-gradient(180deg, #891313 0, #b31818 30%, #e61515 45%, #fd5555 65%, #e61515 95%);
+}
+.container .middle-element .hinge-container .hinge-left {
+  width: 15%;
+  border-right: 2px solid #000;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.container .middle-element .hinge-container .hinge-middle {
+  width: 70%;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+.container .middle-element .hinge-container .hinge-right {
+  width: 15%;
+  border-left: 2px solid #000;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.container .bottom-panel .bottom-screen-bg {
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 120%;
+  height: 60%;
+  transform: translate(-22%, -47%);
+  background-color: #303032;
+  box-shadow: inset 4px 4px 8px #000, inset -4px -4px 8px #000;
+  z-index: 20;
+}
+.container .bottom-panel .bottom-screen-bg .btn-container {
+  border: 4px solid #000;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px #000;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 180px;
+  height: 180px;
+  transform: translateY(-50%);
+  background-color: #303032;
+  z-index: 30;
+}
+.container .bottom-panel .bottom-screen-bg .btn-container .btn-left {
+  width: 55px;
+  height: 30px;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.container .bottom-panel .bottom-screen-bg .btn-container .btn-right {
+  width: 55px;
+  height: 30px;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.container .bottom-panel .bottom-screen-bg .btn-container .btn-up {
+  width: 30px;
+  height: 55px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  cursor: pointer;
+}
+.container .bottom-panel .bottom-screen-bg .btn-container .btn-down {
+  width: 30px;
+  height: 55px;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  cursor: pointer;
+}
+.container .bottom-panel .bottom-screen-border {
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #000;
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  height: 80%;
+  transform: translateY(-48%);
+  background-color: #97979d;
+  padding: 5px;
+  z-index: 20;
+}
+.container .bottom-panel .bottom-screen-border .bottom-screen h3 {
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: normal;
+}
+.container .bottom-panel .bottom-screen-border .bottom-screen .evo {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .bottom-panel .bottom-screen-border .bottom-screen .evo .evolution-name {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
