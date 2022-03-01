@@ -57,13 +57,13 @@ class Pokedex {
     }
 
     async render() {
+        await this.setEvolutionChain();
         this.setName();
         this.setWeight();
         this.setHeight();
         this.setImage(this.data.sprites.front_default, this.data.name, imageContainer);
         this.setTypes();
         this.setDescription();
-        await this.setEvolutionChain();
     }
 
     setName() {
@@ -99,7 +99,7 @@ class Pokedex {
 
     setDescription() {
         descriptionContainer.innerText = this.randomDescription();
-        descriptionContainer.innerText = descriptionContainer.innerHTML.replace(/\<br>/g," ");
+        descriptionContainer.innerText = descriptionContainer.innerHTML.replace(/<br>/g," ");
     };
 
     async setEvolutionChain() {
@@ -186,4 +186,4 @@ async function showPrev() {
 
 
 
-//zrobić oddzielne pliki dla pokedexu, i oddzielne dla rzeczy które robią coś na stronie, w main zostawić tylko listenery i pobieranie :)
+//zrobić oddzielne pliki dla pokedexu, i oddzielne dla rzeczy które robią coś na stronie, w main zostawić tylko listenery i pobieranie
